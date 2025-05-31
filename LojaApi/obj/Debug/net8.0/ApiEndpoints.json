@@ -1,0 +1,85 @@
+[
+  {
+    "ContainingType": "LojaApi.Controllers.CaixaController",
+    "Method": "CadastroCaixa",
+    "RelativePath": "api/Caixa/cadastroCaixa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "caixa",
+        "Type": "LojaApi.Models.Caixa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LojaApi.Controllers.CaixaController",
+    "Method": "ConsultaCaixa",
+    "RelativePath": "api/Caixa/consultaCaixa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LojaApi.Controllers.PedidoController",
+    "Method": "CadastroPedido",
+    "RelativePath": "api/Pedido/cadastroPedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pedidos",
+        "Type": "System.Collections.Generic.List\u00601[[LojaApi.Data.Dto.PedidoInputDto, LojaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LojaApi.Controllers.PedidoController",
+    "Method": "ConsultaPedidos",
+    "RelativePath": "api/Pedido/consultaPedido",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LojaApi.Controllers.PedidoController",
+    "Method": "EmpacotarPedido",
+    "RelativePath": "api/Pedido/empacotarPedido",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LojaApi.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[LojaApi.WeatherForecast, LojaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
