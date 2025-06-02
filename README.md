@@ -14,7 +14,7 @@
 
 ## Executando o Projeto
 
-Abra a aplicação no **Visual Studio** e inicie o projeto. A interface **Swagger** será carregada automaticamente.
+Abra a aplicação no **Visual Studio 2022**, execute o comando "update-database" para criação de banco de dados no SQÇ e inicie o projeto. A interface **Swagger** será carregada automaticamente.
 
 ---
 
