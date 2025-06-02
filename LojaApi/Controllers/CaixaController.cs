@@ -1,7 +1,5 @@
 ﻿using LojaApi.Data.Dto;
 using LojaApi.Interface;
-using LojaApi.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LojaApi.Controllers
