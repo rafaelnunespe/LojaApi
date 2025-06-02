@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using LojaApi.Data;
+﻿using LojaApi.Data;
 using LojaApi.Data.Dto;
 using LojaApi.Interface;
 using LojaApi.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace LojaApi.Service
 {
@@ -19,7 +17,6 @@ namespace LojaApi.Service
         {
             List<Pedido> pedidos = pedidosDto.Select(dto => new Pedido
             {
-                PedidoId = dto.Pedido_Id,
                 Produtos = dto.Produtos.Select(p => new Produto
                 {
                     ProdutoId = p.Produto_id,
@@ -34,7 +31,17 @@ namespace LojaApi.Service
 
 
             _dbContext.Pedidos.AddRange(pedidos);
-            _dbContext.SaveChanges();
+
+
+            try
+            {
+                _dbContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
 
             return true;
         }
@@ -54,114 +61,105 @@ namespace LojaApi.Service
             }).ToList();
         }
 
-        public List<PedidoEmbalado> ProcessarPedidos()
+        bool embalou = false;
+
+        public List<PedidoEmbalado> ProcessarPedidos(List<PedidoInputDto> pedidosDto)
         {
             List<PedidoEmbalado> pedidoEmbalados = null;
 
             CaixaService caixaService = new CaixaService(_dbContext);
 
-            List<ProdutoOutputDto> produtos = ConsultarPedidos();
             var caixas = caixaService.ConsultarCaixas();
-            List<CaixaEmbalada> caixasEmbaladas;
 
-            var embalados = new List<PedidoEmbalado>();
+            var embalados = new List<PedidoEmbaladoDto>();
 
-            foreach (var produto in produtos)
+            if (CadastrarPedido(pedidosDto))
             {
-                Caixa caixa1 = caixas[0];
-                Caixa caixa2 = caixas[1];
-                Caixa caixa3 = caixas[2];
-
-                var novaEmbalagem = new PedidoEmbalado
+                foreach (var pedido in pedidosDto)
                 {
-                    Pedido_id = produto.PedidoId,
-                    Caixas = new List<CaixaEmbalada>()
-                };
+                    var produtos = pedido.Produtos;
 
-                var caixaIndisponivel = new CaixaEmbalada
-                {
-                    Caixa_id = "None",
-                    Produtos = new List<string>(),
-                    Observacao = $"Produto {produto.ProdutoId} não cabe em nenhuma caixa disponível."
-                };
+                    int volumeCaixa1 = caixas[0].Dimensoes.Volume;
+                    int volumeCaixa2 = caixas[1].Dimensoes.Volume;
+                    int volumeCaixa3 = caixas[2].Dimensoes.Volume;
 
-                #region Encaixotamento
-                if (Encaixotar(produto.Dimensoes, caixa1.Dimensoes))
-                {
-                    var caixaUsada = new CaixaEmbalada
+                    List<int> volumesCaixa = new List<int>();
+
+                    volumesCaixa.Add(volumeCaixa1);
+                    volumesCaixa.Add(volumeCaixa2);
+                    volumesCaixa.Add(volumeCaixa3);
+
+                    var encomenda = new PedidoEmbaladoDto
                     {
-                        Caixa_id = caixa1.Nome,
+                        Caixas = new List<CaixaEmbaladaDto>()
+                    };
+
+                    var caixaIndisponivel = new CaixaEmbaladaDto
+                    {
+                        Caixa_id = "None",
+                        Produtos = new List<string>(),
+                        Observacao = $"Produto não cabe em nenhuma caixa disponível."
+                    };
+
+                    var caixaUsada = new CaixaEmbaladaDto
+                    {
                         Produtos = new List<string>()
                     };
 
-                    caixaUsada.Produtos.Add(produto.ProdutoId);
-                    novaEmbalagem.Caixas.Add(caixaUsada);
-                }
-                else if (Encaixotar(produto.Dimensoes, caixa2.Dimensoes))
-                {
-                    var caixaUsada = new CaixaEmbalada
+                    foreach (var produto in produtos)
                     {
-                        Caixa_id = caixa2.Nome,
-                        Produtos = new List<string>()
-                    };
+                        var volumeProduto = produto.Dimensoes.Altura * produto.Dimensoes.Largura * produto.Dimensoes.Comprimento;
 
-                    caixaUsada.Produtos.Add(produto.ProdutoId);
+                        for (int i = 0; i < caixas.Count; i++)
+                        {
+                            if (embalou)
+                            {
+                                volumesCaixa[i] = volumesCaixa[i] - volumeProduto;
+                            }
 
-                    novaEmbalagem.Caixas.Add(caixaUsada);
+                            if (volumeProduto < volumesCaixa[i])
+                            {
+                                embalou = true;
+                                caixaUsada.Caixa_id = caixas[i].Nome;
+                                caixaUsada.Produtos.Add(produto.Produto_id);
+                                break;
+                            }
+                            else
+                                embalou = false;
+                            
+                        }
+                        if (!embalou)
+                        {
+                            caixaIndisponivel.Produtos.Add(produto.Produto_id);
+                            encomenda.Caixas.Add(caixaIndisponivel);
+                        }
+                    }
+                    
+                    encomenda.Caixas.Add(caixaUsada);
+
+                    embalados.Add(encomenda);
                 }
-                else if (Encaixotar(produto.Dimensoes, caixa3.Dimensoes))
+                pedidoEmbalados = embalados.Select(x => new PedidoEmbalado
                 {
-                    var caixaUsada = new CaixaEmbalada
+                    Caixas = x.Caixas.Select(p => new CaixaEmbalada
                     {
-                        Caixa_id = caixa3.Nome,
-                        Produtos = new List<string>()
-                    };
+                        Caixa_id = p.Caixa_id,
+                        Produtos = p.Produtos,
+                        Observacao = p.Observacao
+                    }).ToList()
+                }).ToList();
 
-                    caixaUsada.Produtos.Add(produto.ProdutoId);
-
-                    novaEmbalagem.Caixas.Add(caixaUsada);
-                }
-                else
-                {
-                    caixaIndisponivel.Produtos.Add(produto.ProdutoId);
-
-                    novaEmbalagem.Caixas.Add(caixaIndisponivel);
-                }
-                #endregion
-
-                embalados.Add(novaEmbalagem);
-
-                pedidoEmbalados = embalados;
+                _dbContext.PedidosEmbalados.AddRange(pedidoEmbalados);
+                _dbContext.SaveChanges();
             }
-
-            //_dbContext.PedidosEmbalados.AddRange(pedidoEmbalados);
-            //_dbContext.SaveChanges();
+            else
+            {
+                throw new Exception("Erro ao empacotar pedidos!");
+            }
 
             return pedidoEmbalados;
 
         }
-
-        private bool Encaixotar(Dimensoes produto, Dimensoes caixa)
-        {
-            if (produto.Volume < caixa.Volume)
-            {
-                if (produto.Altura < caixa.Altura && produto.Largura <
-                    caixa.Largura && produto.Comprimento < caixa.Comprimento)
-                {
-                    return true;
-                }
-                else return false;
-            }
-            else return false;
-        }
-
-        public Dimensoes AtualizaMedidas(Caixa caixa, Produto produto)
-        {
-            caixa.Dimensoes.Altura = caixa.Dimensoes.Altura - produto.Dimensoes.Altura;
-            caixa.Dimensoes.Largura = caixa.Dimensoes.Largura - produto.Dimensoes.Largura;
-            caixa.Dimensoes.Comprimento = caixa.Dimensoes.Comprimento - produto.Dimensoes.Comprimento;
-
-            return caixa.Dimensoes;
-        }
+        
     }
 }

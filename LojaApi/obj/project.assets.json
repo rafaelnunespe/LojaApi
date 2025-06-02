@@ -4567,11 +4567,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ranpereira\\source\\repos\\LojaApi\\LojaApi\\LojaApi.csproj",
+      "projectUniqueName": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\LojaApi.csproj",
       "projectName": "LojaApi",
-      "projectPath": "C:\\Users\\ranpereira\\source\\repos\\LojaApi\\LojaApi\\LojaApi.csproj",
+      "projectPath": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\LojaApi.csproj",
       "packagesPath": "C:\\Users\\ranpereira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ranpereira\\source\\repos\\LojaApi\\LojaApi\\obj\\",
+      "outputPath": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

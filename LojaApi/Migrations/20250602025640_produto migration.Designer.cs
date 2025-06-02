@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LojaApi.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20250530232518_migration produto")]
-    partial class migrationproduto
+    [Migration("20250602025640_produto migration")]
+    partial class produtomigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Caixa/cadastroCaixa": {
+    "/api/Caixa/cadastroCaixas": {
       "post": {
         "tags": [
           "Caixa"
@@ -14,64 +14,9 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Caixa"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/Caixa"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/Caixa"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Caixa/consultaCaixa": {
-      "get": {
-        "tags": [
-          "Caixa"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Pedido/consultaPedido": {
-      "get": {
-        "tags": [
-          "Pedido"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Pedido/cadastroPedido": {
-      "post": {
-        "tags": [
-          "Pedido"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/components/schemas/PedidoInputDto"
+                  "$ref": "#/components/schemas/CaixaDto"
                 }
               }
             },
@@ -79,7 +24,7 @@
               "schema": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/components/schemas/PedidoInputDto"
+                  "$ref": "#/components/schemas/CaixaDto"
                 }
               }
             },
@@ -87,7 +32,7 @@
               "schema": {
                 "type": "array",
                 "items": {
-                  "$ref": "#/components/schemas/PedidoInputDto"
+                  "$ref": "#/components/schemas/CaixaDto"
                 }
               }
             }
@@ -100,11 +45,103 @@
         }
       }
     },
-    "/api/Pedido/empacotarPedido": {
+    "/api/Caixa/consultaCaixas": {
+      "get": {
+        "tags": [
+          "Caixa"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Pedido/consultaPedidos": {
+      "get": {
+        "tags": [
+          "Pedido"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Pedido/cadastroPedidos": {
       "post": {
         "tags": [
           "Pedido"
         ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PedidoInputDto"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PedidoInputDto"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PedidoInputDto"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Pedido/empacotarPedidos": {
+      "post": {
+        "tags": [
+          "Pedido"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PedidoInputDto"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PedidoInputDto"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PedidoInputDto"
+                }
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -154,42 +191,15 @@
   },
   "components": {
     "schemas": {
-      "Caixa": {
+      "CaixaDto": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "nome": {
             "type": "string",
             "nullable": true
           },
           "dimensoes": {
-            "$ref": "#/components/schemas/Dimensoes"
-          }
-        },
-        "additionalProperties": false
-      },
-      "Dimensoes": {
-        "type": "object",
-        "properties": {
-          "altura": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "largura": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "comprimento": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "volume": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
+            "$ref": "#/components/schemas/DimensoesDto"
           }
         },
         "additionalProperties": false
@@ -215,10 +225,6 @@
       "PedidoInputDto": {
         "type": "object",
         "properties": {
-          "pedido_Id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "produtos": {
             "type": "array",
             "items": {

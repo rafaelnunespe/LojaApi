@@ -7,6 +7,6 @@ namespace LojaApi.Interface
     {
         public bool CadastrarPedido(List<PedidoInputDto> pedidos);
         public List<ProdutoOutputDto> ConsultarPedidos();
-        public List<PedidoEmbalado> ProcessarPedidos();
+        public List<PedidoEmbalado> ProcessarPedidos(List<PedidoInputDto> pedidosDto);
     }
 }

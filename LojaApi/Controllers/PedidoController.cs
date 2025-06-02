@@ -1,4 +1,5 @@
-﻿using LojaApi.Data.Dto;
+﻿using System.Collections.Generic;
+using LojaApi.Data.Dto;
 using LojaApi.Interface;
 using LojaApi.Models;
 using Microsoft.AspNetCore.Http;
@@ -18,14 +19,14 @@ namespace LojaApi.Controllers
         }
 
         [HttpGet]
-        [Route("consultaPedido")]
+        [Route("consultaPedidos")]
         public IActionResult ConsultaPedidos()
         {
             return Ok(_pedido.ConsultarPedidos());
         }
 
         [HttpPost]
-        [Route("cadastroPedido")]
+        [Route("cadastroPedidos")]
         public IActionResult CadastroPedido([FromBody] List<PedidoInputDto> pedidos)
         {
             if (_pedido.CadastrarPedido(pedidos))
@@ -35,10 +36,10 @@ namespace LojaApi.Controllers
         }
 
         [HttpPost]
-        [Route("empacotarPedido")]
-        public IActionResult EmpacotarPedido()
+        [Route("empacotarPedidos")]
+        public IActionResult EmpacotarPedido([FromBody] List<PedidoInputDto> pedidosDto)
         {
-            return Ok(_pedido.ProcessarPedidos());
+            return Ok(_pedido.ProcessarPedidos(pedidosDto));
         }
     }
 }

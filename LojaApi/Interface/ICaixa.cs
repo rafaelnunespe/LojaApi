@@ -1,10 +1,11 @@
-﻿using LojaApi.Models;
+﻿using LojaApi.Data.Dto;
+using LojaApi.Models;
 
 namespace LojaApi.Interface
 {
     public interface ICaixa
     {
-        public Caixa CadastrarCaixa(Caixa caixa);
+        public List<Caixa> CadastrarCaixas(List<CaixaDto> caixas);
         public List<Caixa> ConsultarCaixas();
     }
 }

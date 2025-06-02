@@ -2,14 +2,14 @@
   {
     "ContainingType": "LojaApi.Controllers.CaixaController",
     "Method": "CadastroCaixa",
-    "RelativePath": "api/Caixa/cadastroCaixa",
+    "RelativePath": "api/Caixa/cadastroCaixas",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "caixa",
-        "Type": "LojaApi.Models.Caixa",
+        "Name": "caixas",
+        "Type": "System.Collections.Generic.List\u00601[[LojaApi.Data.Dto.CaixaDto, LojaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": true
       }
     ],
@@ -18,7 +18,7 @@
   {
     "ContainingType": "LojaApi.Controllers.CaixaController",
     "Method": "ConsultaCaixa",
-    "RelativePath": "api/Caixa/consultaCaixa",
+    "RelativePath": "api/Caixa/consultaCaixas",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "LojaApi.Controllers.PedidoController",
     "Method": "CadastroPedido",
-    "RelativePath": "api/Pedido/cadastroPedido",
+    "RelativePath": "api/Pedido/cadastroPedidos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -44,7 +44,7 @@
   {
     "ContainingType": "LojaApi.Controllers.PedidoController",
     "Method": "ConsultaPedidos",
-    "RelativePath": "api/Pedido/consultaPedido",
+    "RelativePath": "api/Pedido/consultaPedidos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -54,11 +54,17 @@
   {
     "ContainingType": "LojaApi.Controllers.PedidoController",
     "Method": "EmpacotarPedido",
-    "RelativePath": "api/Pedido/empacotarPedido",
+    "RelativePath": "api/Pedido/empacotarPedidos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "pedidosDto",
+        "Type": "System.Collections.Generic.List\u00601[[LojaApi.Data.Dto.PedidoInputDto, LojaApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

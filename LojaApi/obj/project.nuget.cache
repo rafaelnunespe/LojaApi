@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "88S0yZjkvGY=",
+  "dgSpecHash": "Cv2lFRNdnqY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ranpereira\\source\\repos\\LojaApi\\LojaApi\\LojaApi.csproj",
+  "projectFilePath": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\LojaApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ranpereira\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\ranpereira\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

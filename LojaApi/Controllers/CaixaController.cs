@@ -1,4 +1,5 @@
-﻿using LojaApi.Interface;
+﻿using LojaApi.Data.Dto;
+using LojaApi.Interface;
 using LojaApi.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,14 +18,14 @@ namespace LojaApi.Controllers
         }
 
         [HttpPost]
-        [Route("cadastroCaixa")]
-        public IActionResult CadastroCaixa([FromBody] Caixa caixa)
+        [Route("cadastroCaixas")]
+        public IActionResult CadastroCaixa([FromBody] List<CaixaDto> caixas)
         {
-            return Ok(_caixa.CadastrarCaixa(caixa));
+            return Ok(_caixa.CadastrarCaixas(caixas));
         }
 
         [HttpGet]
-        [Route("consultaCaixa")]
+        [Route("consultaCaixas")]
         public IActionResult ConsultaCaixa()
         {
             return Ok(_caixa.ConsultarCaixas());
