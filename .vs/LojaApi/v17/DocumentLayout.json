@@ -1,0 +1,328 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\service\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\service\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\controllers\\caixacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\controllers\\caixacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\models\\caixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\models\\caixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\data\\dto\\caixadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\data\\dto\\caixadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\service\\caixaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\service\\caixaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\models\\dimensoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\models\\dimensoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\interface\\icaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\interface\\icaixa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\profiles\\pedidoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\profiles\\pedidoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\profiles\\caixaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\profiles\\caixaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\profiles\\pedidoembaladoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\profiles\\pedidoembaladoprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\data\\dto\\dimensoesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\data\\dto\\dimensoesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\data\\dto\\produtoinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\data\\dto\\produtoinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\data\\dto\\pedidoinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\data\\dto\\pedidoinputdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\data\\dto\\pedidoembaladodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\data\\dto\\pedidoembaladodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\interface\\ipedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\interface\\ipedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\models\\pedidoembalado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\models\\pedidoembalado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|c:\\users\\ranpereira\\documents\\projetos pessoais\\lojaapi\\lojaapi\\migrations\\20250602025640_produto migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8611D85B-0892-478A-8067-BDFEDB83703D}|LojaApi\\LojaApi.csproj|solutionrelative:lojaapi\\migrations\\20250602025640_produto migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PedidoService.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Service\\PedidoService.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Service\\PedidoService.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Service\\PedidoService.cs",
+              "RelativeToolTip": "LojaApi\\Service\\PedidoService.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAjwIkAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:30:49.705Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CaixaDto.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\CaixaDto.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Data\\Dto\\CaixaDto.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\CaixaDto.cs",
+              "RelativeToolTip": "LojaApi\\Data\\Dto\\CaixaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T04:26:20.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Caixa.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Models\\Caixa.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Models\\Caixa.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Models\\Caixa.cs",
+              "RelativeToolTip": "LojaApi\\Models\\Caixa.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAiwAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T04:19:19.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CaixaController.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Controllers\\CaixaController.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Controllers\\CaixaController.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Controllers\\CaixaController.cs",
+              "RelativeToolTip": "LojaApi\\Controllers\\CaixaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T01:59:25.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Controllers\\PedidoController.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Controllers\\PedidoController.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Controllers\\PedidoController.cs",
+              "RelativeToolTip": "LojaApi\\Controllers\\PedidoController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAkwBUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:50:18.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ICaixa.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Interface\\ICaixa.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Interface\\ICaixa.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Interface\\ICaixa.cs",
+              "RelativeToolTip": "LojaApi\\Interface\\ICaixa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T04:30:33.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CaixaService.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Service\\CaixaService.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Service\\CaixaService.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Service\\CaixaService.cs",
+              "RelativeToolTip": "LojaApi\\Service\\CaixaService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIA/wBEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T23:37:48.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dimensoes.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Models\\Dimensoes.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Models\\Dimensoes.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Models\\Dimensoes.cs",
+              "RelativeToolTip": "LojaApi\\Models\\Dimensoes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T04:13:05.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DimensoesDto.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\DimensoesDto.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Data\\Dto\\DimensoesDto.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\DimensoesDto.cs",
+              "RelativeToolTip": "LojaApi\\Data\\Dto\\DimensoesDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T04:28:18.721Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CaixaProfile.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Profiles\\CaixaProfile.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Profiles\\CaixaProfile.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Profiles\\CaixaProfile.cs",
+              "RelativeToolTip": "LojaApi\\Profiles\\CaixaProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T04:28:55.968Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20250602025640_produto migration.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Migrations\\20250602025640_produto migration.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Migrations\\20250602025640_produto migration.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Migrations\\20250602025640_produto migration.cs",
+              "RelativeToolTip": "LojaApi\\Migrations\\20250602025640_produto migration.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:56:40.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IPedido.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Interface\\IPedido.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Interface\\IPedido.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Interface\\IPedido.cs",
+              "RelativeToolTip": "LojaApi\\Interface\\IPedido.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAD4vwkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:49:53.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PedidoEmbaladoDto.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\PedidoEmbaladoDto.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Data\\Dto\\PedidoEmbaladoDto.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\PedidoEmbaladoDto.cs",
+              "RelativeToolTip": "LojaApi\\Data\\Dto\\PedidoEmbaladoDto.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:42:42.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PedidoInputDto.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\PedidoInputDto.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Data\\Dto\\PedidoInputDto.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\PedidoInputDto.cs",
+              "RelativeToolTip": "LojaApi\\Data\\Dto\\PedidoInputDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:36:22.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PedidoEmbalado.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Models\\PedidoEmbalado.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Models\\PedidoEmbalado.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Models\\PedidoEmbalado.cs",
+              "RelativeToolTip": "LojaApi\\Models\\PedidoEmbalado.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:43:36.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProdutoInputDto.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\ProdutoInputDto.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Data\\Dto\\ProdutoInputDto.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Data\\Dto\\ProdutoInputDto.cs",
+              "RelativeToolTip": "LojaApi\\Data\\Dto\\ProdutoInputDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:36:15.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PedidoEmbaladoProfile.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Profiles\\PedidoEmbaladoProfile.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Profiles\\PedidoEmbaladoProfile.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Profiles\\PedidoEmbaladoProfile.cs",
+              "RelativeToolTip": "LojaApi\\Profiles\\PedidoEmbaladoProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:45:28.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PedidoProfile.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Profiles\\PedidoProfile.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Profiles\\PedidoProfile.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Profiles\\PedidoProfile.cs",
+              "RelativeToolTip": "LojaApi\\Profiles\\PedidoProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:45:20.09Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Program.cs",
+              "RelativeDocumentMoniker": "LojaApi\\Program.cs",
+              "ToolTip": "C:\\Users\\ranpereira\\Documents\\Projetos Pessoais\\LojaApi\\LojaApi\\Program.cs",
+              "RelativeToolTip": "LojaApi\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T22:44:30.328Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -29,9 +29,7 @@ namespace LojaApi.Service
                 }).ToList()
             }).ToList();
 
-
             _dbContext.Pedidos.AddRange(pedidos);
-
 
             try
             {
@@ -41,7 +39,6 @@ namespace LojaApi.Service
             {
                 return false;
             }
-
 
             return true;
         }
@@ -61,7 +58,7 @@ namespace LojaApi.Service
             }).ToList();
         }
 
-        bool embalou = false;
+
 
         public List<PedidoEmbalado> ProcessarPedidos(List<PedidoInputDto> pedidosDto)
         {
@@ -72,6 +69,8 @@ namespace LojaApi.Service
             var caixas = caixaService.ConsultarCaixas();
 
             var embalados = new List<PedidoEmbaladoDto>();
+
+            bool embalou = false;
 
             if (CadastrarPedido(pedidosDto))
             {
@@ -112,29 +111,27 @@ namespace LojaApi.Service
 
                         for (int i = 0; i < caixas.Count; i++)
                         {
-                            if (embalou)
-                            {
-                                volumesCaixa[i] = volumesCaixa[i] - volumeProduto;
-                            }
-
                             if (volumeProduto < volumesCaixa[i])
                             {
                                 embalou = true;
                                 caixaUsada.Caixa_id = caixas[i].Nome;
                                 caixaUsada.Produtos.Add(produto.Produto_id);
+                                volumesCaixa[i] = volumesCaixa[i] - volumeProduto;
                                 break;
                             }
                             else
+                            {
                                 embalou = false;
-                            
+                            }
                         }
+
                         if (!embalou)
                         {
                             caixaIndisponivel.Produtos.Add(produto.Produto_id);
                             encomenda.Caixas.Add(caixaIndisponivel);
                         }
                     }
-                    
+
                     encomenda.Caixas.Add(caixaUsada);
 
                     embalados.Add(encomenda);
@@ -160,6 +157,6 @@ namespace LojaApi.Service
             return pedidoEmbalados;
 
         }
-        
+
     }
 }
