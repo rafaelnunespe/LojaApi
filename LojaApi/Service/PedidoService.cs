@@ -103,9 +103,6 @@ namespace LojaApi.Service
                     };
 
                     bool embalou = false;
-                    int i = 0;
-
-
 
                     foreach (var produto in produtos)
                     {
@@ -139,10 +136,11 @@ namespace LojaApi.Service
                     _dbContext.PedidosEmbalados.AddRange(pedidoEmbalados);
                     _dbContext.SaveChanges();
 
+                    #region MetodoEmpacotar
                     CaixaEmbaladaDto Embalar(ProdutoInputDto produto, List<int> volumeCaixas)
                     {
+                        int i = 0;
                         var volumeProduto = produto.Dimensoes.Altura * produto.Dimensoes.Largura * produto.Dimensoes.Comprimento;
-
                         var caixaUsada = new CaixaEmbaladaDto();
 
                         foreach (var caixa in caixas)
@@ -171,6 +169,8 @@ namespace LojaApi.Service
 
                         return caixaUsada;
                     }
+                    #endregion
+
                 }
             }
             else
