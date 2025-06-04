@@ -150,7 +150,8 @@ namespace LojaApi.Service
                                 Produtos = new List<string>()
                             };
 
-                            if (volumeProduto < volumesCaixa[i])
+                            if (volumeProduto <= volumesCaixa[i]
+                                && produto.Dimensoes.Altura <= caixa.Dimensoes.Altura)
                             {
                                 embalou = true;
                                 caixaUsada.Caixa_id = caixa.Nome;
