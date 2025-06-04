@@ -12,7 +12,7 @@
 }
 ```
 
-## Executando o Projeto
+## 🚀 Executando o Projeto
 
 Abra a aplicação no **Visual Studio 2022**, execute o comando "update-database" no terminal Nuget para criação de banco de dados no SQL e inicie o projeto. A interface **Swagger** será carregada automaticamente.
 
